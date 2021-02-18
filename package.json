@@ -1,10 +1,10 @@
 {
-    "name": "@1inch/1inch-merch",
+    "name": "@1inch/1inch-merch-contract",
     "version": "0.0.1",
     "description": "",
     "repository": {
         "type": "git",
-        "url": "git@github.com:1inch-exchange/1inch-merch.git"
+        "url": "git@github.com:1inch-exchange/1inch-merch-contract.git"
     },
     "license": "MIT",
     "dependencies": {
