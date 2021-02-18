@@ -18,4 +18,9 @@ contract OneInchTShirt is ERC20Burnable, Ownable {
     function rescueFunds(IERC20 token, uint256 amount) external onlyOwner {
         token.safeTransfer(msg.sender, amount);
     }
+
+    function _burn(address account, uint256 amount) internal override {
+        require(amount % 1e18 == 0, "Partial burn is not allowed");
+        super._burn(account, amount);
+    }
 }
