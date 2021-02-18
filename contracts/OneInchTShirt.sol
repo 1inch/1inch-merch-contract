@@ -10,8 +10,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract OneInchTShirt is ERC20Burnable, Ownable {
     using SafeERC20 for IERC20;
 
-    constructor(address _owner) ERC20("1inch T-Shirt ETH Denver 2021", "1TS-D21") {
-        _mint(_owner, 254 ether);
+    constructor(string memory _name, string memory _symbol, address _owner, uint256 _supply) ERC20(_name, _symbol) {
+        _mint(_owner, _supply);
         transferOwnership(_owner);
     }
 
