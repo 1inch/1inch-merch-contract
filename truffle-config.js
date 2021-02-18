@@ -6,13 +6,13 @@ module.exports = {
     networks: {
         mainnet: {
             provider: function() {
-                return new HDWalletProvider({
-                    privateKeys: [privateKey],
-                    provider: mainnetEndpointUrl
-                });
+                return new HDWalletProvider(
+                    privateKey,
+                    mainnetEndpointUrl
+                );
             },
             gas: 2000000,
-            gasPrice: 130000000000,
+            gasPrice: 240000000000,
             network_id: 1
         }
     },
@@ -26,5 +26,12 @@ module.exports = {
                 }
             }
         }
+    },
+    plugins: [
+        'solidity-coverage',
+        'truffle-plugin-verify'
+    ],
+    api_keys: {
+        etherscan: ''
     }
 };

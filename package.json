@@ -1,24 +1,27 @@
 {
-    "name": "@1inch/1inch-tshirt",
+    "name": "@1inch/1inch-merch",
     "version": "0.0.1",
     "description": "",
     "repository": {
         "type": "git",
-        "url": "git@github.com:1inch-exchange/1inch-tshirt.git"
+        "url": "git@github.com:1inch-exchange/1inch-merch.git"
     },
     "license": "MIT",
     "dependencies": {
         "@openzeppelin/contracts": "3.4.0-solc-0.7"
     },
     "devDependencies": {
+        "@openzeppelin/test-helpers": "^0.5.10",
+        "@truffle/hdwallet-provider": "^1.2.2",
+        "chai": "^4.3.0",
         "solc": "0.7.6",
         "solhint": "^3.3.2",
-        "truffle": "^5.1.64",
-        "truffle-plugin-verify": "^0.5.4",
-        "@truffle/hdwallet-provider": "^1.2.1"
+        "truffle": "^5.1.66",
+        "truffle-plugin-verify": "^0.5.4"
     },
     "scripts": {
-        "test": "truffle test --stacktrace",
+        "deploy:mainnet": "truffle migrate --network mainnet --reset",
+        "verify:mainnet": "truffle run verify OneInchMerch --network mainnet",
         "lint": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
         "lint:fix": "solhint --max-warnings 0 \"contracts/**/*.sol\" --fix"
     }

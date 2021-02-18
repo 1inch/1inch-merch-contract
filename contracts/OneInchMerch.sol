@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 
-contract OneInchTShirt is ERC20Burnable, Ownable {
+contract OneInchMerch is ERC20Burnable, Ownable {
     using SafeERC20 for IERC20;
 
     constructor(string memory _name, string memory _symbol, address _owner, uint256 _supply) ERC20(_name, _symbol) {

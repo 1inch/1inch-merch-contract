@@ -1,0 +1,35 @@
+Starting migrations...
+======================
+> Network name:    'mainnet'
+> Network id:      1
+> Block gas limit: 12451038 (0xbdfcde)
+
+
+1_eth_denver.js
+===============
+Deployer account: 0xB00F1c082113fCAaeB7BaBb6E855F0B13f80b766
+Deployer balance: 1 ETH
+
+   Deploying 'OneInchMerch'
+   ------------------------
+   > transaction hash:    0xd050bff19e56c25bf8681ccd99774d328c024e7190d537aa1d20659495c32462
+   > Blocks: 0            Seconds: 40
+   > contract address:    0xAD07564651089c7904f7Cf35cee6D1b22Ad833c7
+   > block number:        11881843
+   > block timestamp:     1613664793
+   > account:             0xB00F1c082113fCAaeB7BaBb6E855F0B13f80b766
+   > balance:             0.63311584
+   > gas used:            1528684 (0x17536c)
+   > gas price:           240 gwei
+   > value sent:          0 ETH
+   > total cost:          0.36688416 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.36688416 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.36688416 ETH
